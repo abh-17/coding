@@ -18,5 +18,8 @@ public:
             {return i+1;}
         }
         
+        
+        return nums.size()+1;
+        
     }
 };
