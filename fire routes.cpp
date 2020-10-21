@@ -42,3 +42,17 @@ int main() {
 	        v[b-1].push_back(a-1);
 	        
 	    }
+	    int count=0;long long res=1;
+	    for(int i=0;i<n;i++)
+	    {
+	        if(vis[i]==false)
+	        {
+	            count++;
+	            res*=dfs(i,0);
+	            res= res% MOD;
+	        }
+	    }
+	    cout<<count<<" "<<res<<"\n";
+	}
+	return 0;
+}
